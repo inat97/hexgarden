@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hex Garden — a calm hex tile garden</title>
+<meta name="description" content="A calm hex tile-placement game: match flowers, close beds so they bloom, beat the daily garden. No ads.">
+<style>
+:root{--bg:#f8f6ea;--card:#fff;--ink:#26361f;--muted:#5d6b55;--brand:#3f7f36;--line:#e1e6d3}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#141a12;--card:#1d2619;--ink:#e8efe0;--muted:#a3b39a;--brand:#9bd18a;--line:#2d3a28}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 5rem}
+header{display:flex;align-items:center;gap:.7rem;margin-bottom:2.5rem}
+header a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:.7rem}
+.mark{width:34px;height:34px;border-radius:9px;background:#c8e0b0;display:grid;place-items:center}
+.mark svg{width:24px;height:24px}
+header b{font-size:1.05rem}
+h1{font-size:1.9rem;line-height:1.2;letter-spacing:-.02em;margin:0 0 .4rem}
+h2{font-size:1.12rem;margin:2.4rem 0 .6rem}
+.lede{color:var(--muted);font-size:1.05rem;margin:0 0 2rem}
+.meta{color:var(--muted);font-size:.85rem;margin:0 0 2.2rem}
+a{color:var(--brand)}
+ul{padding-left:1.15rem} li{margin:.3rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.25rem;margin:1.4rem 0}
+.warn{border-left:4px solid var(--brand)} .warn h2{margin-top:0}
+.small{font-size:.88rem;color:var(--muted)}
+footer{margin-top:4rem;padding-top:1.4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+nav a{margin-right:1rem}
+</style>
+</head><body><div class="wrap">
+<header><a href="index.html"><span class="mark"><svg viewBox="-10 -10 20 20"><polygon points="8.7,5 0,10 -8.7,5 -8.7,-5 0,-10 8.7,-5" fill="#fff8ec" stroke="#9e7a54" stroke-width="1"/><polygon points="0,0 8.7,-5 8.7,5" fill="#f4b8b4"/><polygon points="0,0 0,-10 8.7,-5" fill="#f4b8b4"/><polygon points="0,0 -8.7,-5 0,-10" fill="#f8dc95"/><polygon points="0,0 -8.7,5 -8.7,-5" fill="#f8dc95"/><polygon points="0,0 0,10 -8.7,5" fill="#cbbdec"/><polygon points="0,0 8.7,5 0,10" fill="#cbbdec"/><circle r="1.6" fill="#7aa866"/></svg></span><b>Hex Garden</b></a></header>
+
+<h1>Plant a garden, one hex at a time.</h1>
+<p class="lede">A calm tile-placement game. Each hex tile carries patches of flowers. Turn it, place it next to your
+garden, and score when matching flowers touch. Close a flower bed on every side and it blooms. A new daily garden for
+everyone, 40 gardens to grow through, and no ads.</p>
+
+<div class="card">
+<h2 style="margin-top:0">How to play</h2>
+<ul>
+<li><b>Tap</b> a lit spot next to your garden to place the tile in hand there. <b>Tap it again</b> (or use the arrows) to
+turn it. Press <b>Plant</b> when you like it. The number above the tile shows what it will score.</li>
+<li>Every side where two matching flowers touch scores <b>+2</b>.</li>
+<li>A flower bed that is closed on every side — by other tiles, stones, ponds or the garden's edge — <b>blooms</b>:
++1 per petal and +2 per tile in the bed.</li>
+<li>Later gardens add <b>ponds</b> (+1 for every flower edge touching water), <b>bees</b> (+2 for each different flower
+touching a bee tile), <b>stones</b> and <b>butterflies</b> (a bed with a butterfly scores its bloom twice).</li>
+<li>You see the next two tiles, so you can plan. You get <b>one undo</b> per garden.</li>
+<li>Each garden has three star targets. Earn at least one star to open the next garden.</li>
+<li>The <b>daily garden</b> uses the same tiles for everyone that day, with one scored try. Play every day to grow your
+streak. Sharing your result shares only your score and stars, never the garden.</li>
+</ul>
+</div>
+
+<h2>Help</h2>
+<p><b>Restore Pro on a new iPhone.</b> Settings › Restore purchase, signed in with the same Apple Account. Pro is a
+one-time purchase and works with Family Sharing.</p>
+<p><b>Refunds.</b> Apple handles payments and refunds: <a href="https://support.apple.com/118223">request a refund from
+Apple</a>.</p>
+<p><b>Move or back up your progress.</b> Everything lives only on your iPhone and is included in your normal iPhone or
+iCloud backup. There is no account or server to restore it from.</p>
+<p><b>Something wrong?</b> Email <a href="mailto:developers9x@gmail.com">developers9x@gmail.com</a>.</p>
+
+<footer>
+<nav><a href="index.html">Home</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav>
+<p>© 2026 Nguyen Anh Tuan. Contact: <a href="mailto:developers9x@gmail.com">developers9x@gmail.com</a></p>
+</footer>
+</div></body></html>
